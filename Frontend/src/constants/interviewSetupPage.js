@@ -214,5 +214,12 @@ export const interviewSetupData = [
                 ]
             }
         ]
+    },
+    {
+        step: 5,
+        title: "Review & Start",
+        subtitle: "Conform & Begin",
+
+       
     }
 ];
