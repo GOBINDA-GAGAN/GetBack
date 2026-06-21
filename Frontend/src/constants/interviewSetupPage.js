@@ -1,3 +1,27 @@
+import { Select } from "radix-ui";
+import adobe from "@/assets/companyIcon/adobe.png";
+import amazon from "@/assets/companyIcon/amazon.png";
+import apple from "@/assets/companyIcon/apple.png";
+import google from "@/assets/companyIcon/google.png";
+import ibm from "@/assets/companyIcon/ibm.png";
+import meta from "@/assets/companyIcon/meta.png";
+import microsoft from "@/assets/companyIcon/microsoft.png";
+import netflix from "@/assets/companyIcon/netflix.png";
+import oracle from "@/assets/companyIcon/oracle.png";
+import {
+    Code,
+    BriefcaseBusiness,
+    MessageSquareHeart,
+    Network,
+    Layers3,
+} from "lucide-react";
+import {
+  CircleCheckBig,
+  TriangleAlert,
+  ShieldAlert,
+} from "lucide-react";
+
+
 export const interviewSetupData = [
     {
         step: 1,
@@ -13,6 +37,7 @@ export const interviewSetupData = [
         data: [
             {
                 name: "What role are you looking for?",
+                select: "Role",
                 select_field: [
                     {
                         label: "Frontend Developer",
@@ -34,6 +59,7 @@ export const interviewSetupData = [
 
             {
                 name: "Experience Level",
+                select: "Experience",
                 select_field: [
                     {
                         label: "0-1 Year",
@@ -56,6 +82,7 @@ export const interviewSetupData = [
 
             {
                 name: "Top Skills",
+                select: "Top Skills",
                 select_field: [
                     {
                         label: "JavaScript",
@@ -99,17 +126,47 @@ export const interviewSetupData = [
                     {
                         label: "Google",
                         value: "google",
-                        icon: "🔍"
+                        logo: google,
                     },
                     {
                         label: "Microsoft",
                         value: "microsoft",
-                        icon: "🪟"
+                        logo: microsoft,
                     },
                     {
                         label: "Amazon",
                         value: "amazon",
-                        icon: "📦"
+                        logo: amazon,
+                    },
+                    {
+                        label: "Meta",
+                        value: "meta",
+                        logo: meta,
+                    },
+                    {
+                        label: "Apple",
+                        value: "apple",
+                        logo: apple,
+                    },
+                    {
+                        label: "Netflix",
+                        value: "netflix",
+                        logo: netflix,
+                    },
+                    {
+                        label: "Adobe",
+                        value: "adobe",
+                        logo: adobe,
+                    },
+                    {
+                        label: "Oracle",
+                        value: "oracle",
+                        logo: oracle,
+                    },
+                    {
+                        label: "IBM",
+                        value: "ibm",
+                        logo: ibm,
                     }
                 ]
             },
@@ -120,19 +177,29 @@ export const interviewSetupData = [
                     {
                         label: "Technical",
                         value: "technical",
-                        icon: "💻"
+                        icon: Code,
                     },
                     {
                         label: "HR",
                         value: "hr",
-                        icon: "👥"
+                        icon: BriefcaseBusiness,
                     },
                     {
                         label: "Behavioral",
                         value: "behavioral",
-                        icon: "🧠"
-                    }
-                ]
+                        icon: MessageSquareHeart,
+                    },
+                    {
+                        label: "System Design",
+                        value: "system_design",
+                        icon: Network,
+                    },
+                    {
+                        label: "Mixed",
+                        value: "mixed",
+                        icon: Layers3,
+                    },
+                ],
             },
 
             {
@@ -142,21 +209,35 @@ export const interviewSetupData = [
                         label: "Easy",
                         value: "easy",
                         description: "Beginner Friendly",
-                        icon: "🟢"
+                        icon: CircleCheckBig,
+
+                        bgColor: "bg-green-50",
+                        borderColor: "border-green-200",
+                        iconColor: "text-green-600",
                     },
+
                     {
                         label: "Medium",
                         value: "medium",
                         description: "Moderate Level",
-                        icon: "🟡"
+                        icon: TriangleAlert,
+
+                        bgColor: "bg-yellow-50",
+                        borderColor: "border-yellow-200",
+                        iconColor: "text-yellow-600",
                     },
+
                     {
                         label: "Hard",
                         value: "hard",
                         description: "Advanced Level",
-                        icon: "🔴"
-                    }
-                ]
+                        icon: ShieldAlert,
+
+                        bgColor: "bg-red-50",
+                        borderColor: "border-red-200",
+                        iconColor: "text-red-600",
+                    },
+                ],
             }
         ]
     },
@@ -215,11 +296,12 @@ export const interviewSetupData = [
             }
         ]
     },
+
     {
         step: 5,
         title: "Review & Start",
         subtitle: "Conform & Begin",
 
-       
+
     }
 ];

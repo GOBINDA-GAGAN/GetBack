@@ -1,11 +1,11 @@
 import React from 'react'
 
-const StepText = ({title}) => {
-    console.log(title);
+const StepText = ({title,step}) => {
+    
     
     return (
         <h1 className='font-semibold'>
-            <span className='text-primary'>Step 1: </span>{title}
+            <span className='text-primary'>Step {step}: </span>{title}
         </h1>
     )
 }

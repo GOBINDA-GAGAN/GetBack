@@ -103,12 +103,23 @@
   --spacing: 0.25rem;
   --radius: 0.5rem;
   
-  --card-from: #073cc4;
+  --card-from: #0644e1;
   --card-via: #0c37ad;
   --card-to: #010511;
 
   --button-from: #1c66f0;
   --button-to: #92adf8;
+
+  --button-orange-from:#f07f1c;
+  --button-orange-to:#f2712be1;
+  
+  --card-orange-from: rgb(250, 98, 11);
+  --card-orange-via: rgba(6, 2, 37, 0.817);
+  --card-orange-to: rgba(2, 2, 46, 0.927);
+
+  --card-blue-from: rgba(26, 47, 199, 0.845);
+  --card-blue-via: rgba(12, 26, 131, 0.817);
+  --card-blue-to: rgba(0, 0, 10, 0.927);
 
 }
 
