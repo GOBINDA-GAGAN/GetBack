@@ -16,9 +16,15 @@ import {
     Layers3,
 } from "lucide-react";
 import {
-  CircleCheckBig,
-  TriangleAlert,
-  ShieldAlert,
+    CircleCheckBig,
+    TriangleAlert,
+    ShieldAlert,
+} from "lucide-react";
+import {
+    Clock,
+    MessageSquareText,
+    Mic,
+    Video,
 } from "lucide-react";
 
 
@@ -250,51 +256,61 @@ export const interviewSetupData = [
         data: [
             {
                 name: "Interview Duration",
+
                 select_field: [
                     {
-                        label: "10 Minutes",
-                        value: 10
+                        label: "10",
+                        value: 10,
+                        icon: Clock,
                     },
                     {
-                        label: "20 Minutes",
-                        value: 20
+                        label: "20",
+                        value: 20,
+                        icon: Clock,
                     },
                     {
-                        label: "30 Minutes",
-                        value: 30
+                        label: "30",
+                        value: 30,
+                        icon: Clock,
                     },
                     {
-                        label: "45 Minutes",
-                        value: 45
+                        label: "45",
+                        value: 45,
+                        icon: Clock,
                     },
                     {
-                        label: "60 Minutes",
-                        value: 60
-                    }
-                ]
+                        label: "60",
+                        value: 60,
+                        icon: Clock,
+                    },
+                ],
             },
 
             {
                 name: "Interview Mode",
+
                 select_field: [
                     {
-                        label: "Text",
+                        label: "Text Interview",
                         value: "text",
-                        icon: "💬"
+                        icon: MessageSquareText,
+                        iconColor: "text-blue-500"
                     },
                     {
-                        label: "Voice",
+                        label: "Voice Interview",
                         value: "voice",
-                        icon: "🎤"
+                        icon: Mic,
+                        iconColor: "text-green-500"
                     },
                     {
-                        label: "Video",
+                        label: "Video Interview",
                         value: "video",
-                        icon: "📹"
+                        icon: Video,
+                        iconColor: "text-red-500"
                     }
-                ]
-            }
-        ]
+                ],
+            },
+        ],
     },
 
     {

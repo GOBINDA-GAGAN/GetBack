@@ -18,7 +18,7 @@ function DashboardLayout() {
           <Navbar />
         </div>
 
-        <div className="p-6">
+        <div className="p-2">
           <Outlet />
         </div>
       </main>
