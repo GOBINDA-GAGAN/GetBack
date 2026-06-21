@@ -23,7 +23,7 @@ export const sidebarItems = [
   },
   {
     title: "AI Interview",
-    path: "/interview",
+    path: "/interview-setup",
     icon: MessageSquareCode,
   },
 ];
