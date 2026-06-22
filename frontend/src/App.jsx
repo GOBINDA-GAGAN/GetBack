@@ -5,6 +5,7 @@ import DashboardPage from "./pages/DashboardPage"
 import DashboardLayout from "./layouts/DashboardLayout";
 import InterviewPage from "./pages/InterviewPage";
 import IinterviewSetupPage from "./pages/IinterviewSetupPage";
+import AnalyticsPage from "./pages/AnalyticsPage";
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
         <Route path="/dashboard" element={<DashboardPage />} />
         <Route path="/interview-setup" element={<IinterviewSetupPage />} />
         <Route path="/interview" element={<InterviewPage />} />
+        <Route path="/analytics" element={<AnalyticsPage />} />
+
         {/* <Route path="/profile" element={<ProfilePage />} /> */}
       </Route>
 
