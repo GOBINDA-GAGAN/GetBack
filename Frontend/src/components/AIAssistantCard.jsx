@@ -18,7 +18,7 @@ export default function AIAssistant() {
       <div className="flex justify-center py-10">
         <div className="relative">
           <div className="absolute inset-0 rounded-full bg-blue-500/30 blur-xl" />
-          <div className="h-14 w-14 rounded-full bg-gradient-to-br from-blue-300 via-blue-500 to-blue-700 shadow-[0_0_35px_rgba(59,130,246,0.7)]" />
+          <div className="h-14 w-14 rounded-full bg-linear-to-br from-blue-300 via-blue-500 to-blue-700 shadow-[0_0_35px_rgba(59,130,246,0.7)]" />
         </div>
       </div>
 

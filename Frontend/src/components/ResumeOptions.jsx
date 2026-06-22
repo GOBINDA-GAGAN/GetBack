@@ -19,7 +19,7 @@ export default function ResumeCards() {
 
                 {/* Left Dashed Curve */}
                 <svg
-                    className="absolute right-1/2 translate-x-[-30px]"
+                    className="absolute right-1/2 translate-x-7.5"
                     width="80"
                     height="30"
                     viewBox="0 0 80 30"
@@ -41,7 +41,7 @@ export default function ResumeCards() {
 
                 {/* Right Dashed Curve */}
                 <svg
-                    className="absolute left-1/2 translate-x-[30px]"
+                    className="absolute left-1/2 translate-x-7.5"
                     width="80"
                     height="30"
                     viewBox="0 0 80 30"
