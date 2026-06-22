@@ -18,7 +18,7 @@ export const sidebarItems = [
   },
   {
     title: "Quiz",
-    path: "/quiz",
+    path: "/quiz-setup",
     icon: ClipboardCheck,
   },
   {

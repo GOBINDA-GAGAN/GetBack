@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const LandingPage = () => {
   return (
     <div>LandingPage
-      <Link to="Dashboard">
+      <Link to="/dashboard">
 
         <Button>Dashboard</Button>
 

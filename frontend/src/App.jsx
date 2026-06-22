@@ -6,6 +6,8 @@ import DashboardLayout from "./layouts/DashboardLayout";
 import InterviewPage from "./pages/InterviewPage";
 import IinterviewSetupPage from "./pages/IinterviewSetupPage";
 import AnalyticsPage from "./pages/AnalyticsPage";
+import { QuizSetupPage } from "./pages/QuizSetupPage";
+import { QuizPage } from "./pages/QuizPage";
 
 function App() {
   return (
@@ -17,6 +19,9 @@ function App() {
       {/* Dashboard Pages */}
       <Route element={<DashboardLayout />}>
         <Route path="/dashboard" element={<DashboardPage />} />
+        <Route path="/quiz-setup" element={<QuizSetupPage />} />
+        <Route path="/quiz" element={<QuizPage />} />
+
         <Route path="/interview-setup" element={<IinterviewSetupPage />} />
         <Route path="/interview" element={<InterviewPage />} />
         <Route path="/analytics" element={<AnalyticsPage />} />

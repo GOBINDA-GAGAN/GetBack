@@ -12,7 +12,7 @@ function DashboardLayout() {
     <SidebarProvider>
       <AppSidebar />
 
-      <main className="flex-1">
+      <main className="w-full">
         <div className="border-b  flex">
          <SidebarTrigger />
           <Navbar />
