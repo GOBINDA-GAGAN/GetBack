@@ -2,7 +2,7 @@ import { Mic, Send, Sparkles } from "lucide-react";
 
 export default function AIAssistant() {
   return (
-    <div className="w-74 h-62 flex flex-col justify-between rounded-2xl border bg-white p-2 shadow-2xl">
+    <div className=" h-62 flex flex-col justify-between rounded-2xl border bg-white p-2 shadow-2xl">
       {/* Header */}
       <div className="flex items-center justify-between">
         <h2 className="text-sm font-semibold text-gray-900">
