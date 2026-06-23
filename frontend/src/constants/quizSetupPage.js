@@ -6,6 +6,24 @@ import {
     Target,
     Lightbulb,
 } from "lucide-react";
+import {
+    FileCode,
+    Atom,
+    Server,
+    Coffee,
+    Code2,
+    Braces,
+    Database,
+    Network,
+    Globe,
+    Smartphone,
+} from "lucide-react";
+import {
+    CircleHelp,
+    Code,
+    MessageSquareText,
+    Layers3,
+} from "lucide-react";
 
 
 export const quizSetupData = [
@@ -35,71 +53,106 @@ export const quizSetupData = [
     {
         step: 2,
         title: "Select Topic",
-        subtitle: "Chose your target role of domain",
+        subtitle: "Choose the topics you want to be tests",
         select_field: [
             {
                 label: "JavaScript",
                 value: "javascript",
-                icon: "🟨"
+                icon: FileCode,
+                iconColor: "text-yellow-500",
             },
             {
                 label: "React",
                 value: "react",
-                icon: "⚛️"
+                icon: Atom,
+                iconColor: "text-cyan-500",
             },
             {
                 label: "Node.js",
                 value: "nodejs",
-                icon: "🟩"
+                icon: Server,
+                iconColor: "text-green-500",
             },
             {
                 label: "Java",
                 value: "java",
-                icon: "☕"
+                icon: Coffee,
+                iconColor: "text-orange-500",
             },
             {
                 label: "Python",
                 value: "python",
-                icon: "🐍"
-            }
+                icon: Code2,
+                iconColor: "text-blue-500",
+            },
+            {
+                label: "TypeScript",
+                value: "typescript",
+                icon: Braces,
+                iconColor: "text-blue-600",
+            },
+            {
+                label: "MongoDB",
+                value: "mongodb",
+                icon: Database,
+                iconColor: "text-green-600",
+            },
+            {
+                label: "Express.js",
+                value: "express",
+                icon: Network,
+                iconColor: "text-gray-700",
+            },
+            {
+                label: "Next.js",
+                value: "nextjs",
+                icon: Globe,
+                iconColor: "text-black dark:text-white",
+            },
+            {
+                label: "React Native",
+                value: "react-native",
+                icon: Smartphone,
+                iconColor: "text-sky-500",
+            },
         ]
     },
     {
         step: 3,
         title: "Difficulty Level",
-        subtitle: "chose the difficulty for your Quiz",
+        subtitle: "Chose the difficulty for your Quiz",
         select_field: [
             {
                 label: "Easy",
                 value: "easy",
                 description: "Beginner Friendly",
-                icon: CircleCheckBig,
-
                 bgColor: "bg-green-50",
                 borderColor: "border-green-200",
-                iconColor: "text-green-600",
+                textColor: "text-green-700",
             },
-
             {
                 label: "Medium",
                 value: "medium",
                 description: "Moderate Level",
-                icon: TriangleAlert,
-
                 bgColor: "bg-yellow-50",
                 borderColor: "border-yellow-200",
-                iconColor: "text-yellow-600",
+                textColor: "text-yellow-700",
             },
-
             {
                 label: "Hard",
                 value: "hard",
                 description: "Advanced Level",
-                icon: ShieldAlert,
-
                 bgColor: "bg-red-50",
                 borderColor: "border-red-200",
-                iconColor: "text-red-600",
+                textColor: "text-red-700",
+            },
+            {
+                label: "Mixed",
+                value: "mixed",
+                description: "Easy + Medium + Hard",
+                bgColor: "bg-blue-50",
+                borderColor: "border-blue-200",
+                textColor: "text-blue-700",
             },
         ],
     },
@@ -107,6 +160,7 @@ export const quizSetupData = [
         step: 4,
         title: "Number of Question",
         subtitle: "Select the number of questions",
+        select: "Questions",
         select_field: [
             {
                 label: "10 Questions",
@@ -133,27 +187,35 @@ export const quizSetupData = [
     {
         step: 5,
         title: "Quiz Type",
-        subtitle: "Select the number of questions",
+        subtitle: "Choose the type of questions",
         select_field: [
             {
-                label: "10 Questions",
-                value: 10,
+                label: "MCQ",
+                value: "mcq",
+                description: "Multiple choice questions",
+                icon: CircleHelp,
+                iconColor: "text-blue-500",
             },
             {
-                label: "20 Questions",
-                value: 20,
+                label: "Output Based",
+                value: "output_based",
+                description: "Predict code output",
+                icon: Code,
+                iconColor: "text-green-500",
             },
             {
-                label: "30 Questions",
-                value: 30,
+                label: "Interview Style",
+                value: "interview",
+                description: "Theory and conceptual questions",
+                icon: MessageSquareText,
+                iconColor: "text-purple-500",
             },
             {
-                label: "40 Questions",
-                value: 40,
-            },
-            {
-                label: "50 Questions",
-                value: 50,
+                label: "Mixed",
+                value: "mixed",
+                description: "MCQ + Output + Interview",
+                icon: Layers3,
+                iconColor: "text-orange-500",
             },
         ],
     },
@@ -161,6 +223,7 @@ export const quizSetupData = [
         step: 6,
         title: "Time Duration",
         subtitle: "Select the quiz duration",
+        select:"Timer",
         select_field: [
             {
                 label: "10 Minutes",

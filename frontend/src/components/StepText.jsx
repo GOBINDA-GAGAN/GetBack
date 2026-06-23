@@ -9,10 +9,10 @@ export const StepText = ({ title, step }) => {
     );
 };
 
-export const QuizStep = ({ title, subtitle, step }) => {
+export const QuizStep = ({ title, subtitle, step }) => { 
     return (
         <div className="flex gap-3 items-center ">
-            <span className="bg-primary text-primary-foreground size-8 rounded-lg flex items-center justify-center font-semibold shadow-sm">
+            <span className="bg-primary text-[11px] text-primary-foreground size-6 rounded-lg flex items-center justify-center font-semibold shadow-sm">
                 {step}
             </span>
 
@@ -24,4 +24,14 @@ export const QuizStep = ({ title, subtitle, step }) => {
             </div>
         </div>
     );
+};
+
+export const PreviewItem = ({ label, value }) => {
+  return (
+    <div className="flex items-center justify-between py-4 border-b border-secondary">
+      <p className="text-sm text-muted-foreground">{label}</p>
+
+      <div>{value}</div>
+    </div>
+  );
 };
