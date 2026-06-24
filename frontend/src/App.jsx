@@ -8,6 +8,7 @@ import IinterviewSetupPage from "./pages/IinterviewSetupPage";
 import AnalyticsPage from "./pages/AnalyticsPage";
 import { QuizSetupPage } from "./pages/QuizSetupPage";
 import { QuizPage } from "./pages/QuizPage";
+import { QuizResultPage } from "./pages/QuizResultPage";
 
 function App() {
   return (
@@ -20,7 +21,9 @@ function App() {
       <Route element={<DashboardLayout />}>
         <Route path="/dashboard" element={<DashboardPage />} />
         <Route path="/quiz-setup" element={<QuizSetupPage />} />
-        <Route path="/quiz" element={<QuizPage />} />
+        <Route path="/quiz/session/:sessionId/attempt" element={<QuizPage />} />
+        <Route path="/quiz/session/:sessionId/result" element={<QuizResultPage />} />
+
 
         <Route path="/interview-setup" element={<IinterviewSetupPage />} />
         <Route path="/interview" element={<InterviewPage />} />

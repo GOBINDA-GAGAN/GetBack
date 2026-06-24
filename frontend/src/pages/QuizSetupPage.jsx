@@ -13,18 +13,63 @@ import { RadioGroup, RadioGroupItem } from "../components/ui/radio-group";
 import { Label } from "../components/ui/label";
 import { ListCollapse, SlidersHorizontal, Sparkles, Timer, UserRound } from 'lucide-react';
 import { Button } from '../components/ui/button';
-import {QuizPreview} from '../components/quizPreviewData';
- import {
-    User,
-    BookOpen,
-    Target,
-    Flag,
-    Brain,
-    Clock3,
-  } from "lucide-react";
+import { QuizPreview } from '../components/quizPreviewData';
+import {
+  User,
+  BookOpen,
+  Target,
+  Flag,
+  Brain,
+  Clock3,
+} from "lucide-react";
+import { useNavigate } from 'react-router-dom';
+
+const quizPreviewData = {
+  previewItems: [
+    {
+      icon: User,
+      label: "Role",
+      value: "Frontend Developer",
+    },
+    {
+      icon: BookOpen,
+      label: "Topics",
+      value: "JavaScript, React",
+    },
+    {
+      icon: Target,
+      label: "Difficulty",
+      value: "Medium",
+    },
+    {
+      icon: Flag,
+      label: "Questions",
+      value: "20",
+    },
+    {
+      icon: Brain,
+      label: "Type",
+      value: "MCQ",
+    },
+    {
+      icon: Clock3,
+      label: "Duration",
+      value: "30 Minutes",
+    },
+  ],
+
+  benefits: [
+    "Personalized questions",
+    "Detailed AI explanations",
+    "Performance breakdown",
+    "Weak area identification",
+    "XP and leaderboard points",
+  ],
+};
 
 export const QuizSetupPage = () => {
- 
+  const navigate = useNavigate();
+
   const quizData = quizSetupData;
   const step_1_Data = quizData[0];
   const step_2_Data = quizData[1];
@@ -34,48 +79,17 @@ export const QuizSetupPage = () => {
   const step_6_Data = quizData[5];
   const step_7_Data = quizData[6];
 
-  const quizPreviewData = {
-    previewItems: [
-      {
-        icon: User,
-        label: "Role",
-        value: "Frontend Developer",
-      },
-      {
-        icon: BookOpen,
-        label: "Topics",
-        value: "JavaScript, React",
-      },
-      {
-        icon: Target,
-        label: "Difficulty",
-        value: "Medium",
-      },
-      {
-        icon: Flag,
-        label: "Questions",
-        value: "20",
-      },
-      {
-        icon: Brain,
-        label: "Type",
-        value: "MCQ",
-      },
-      {
-        icon: Clock3,
-        label: "Duration",
-        value: "30 Minutes",
-      },
-    ],
 
-    benefits: [
-      "Personalized questions",
-      "Detailed AI explanations",
-      "Performance breakdown",
-      "Weak area identification",
-      "XP and leaderboard points",
-    ],
+
+  const handleGenerateQuiz = () => {
+
+    const sessionId = crypto.randomUUID();
+ 
+    
+
+    navigate(`/quiz/session/${sessionId}/attempt`);
   };
+
   return (
     <div> {/* setUp step */}
       <div className='flex justify-between mt-2 rounded-md gap-6 '>
@@ -313,10 +327,13 @@ export const QuizSetupPage = () => {
 
           </div>
 
-          <Button className="rounded-md w-full bg-[linear-gradient(180deg,var(--button-from),var(--button-to))] text-white cursor-pointer">
+
+          <Button onClick={handleGenerateQuiz} className="rounded-md w-full bg-[linear-gradient(180deg,var(--button-from),var(--button-to))] text-white cursor-pointer">
             <Sparkles className="size-4" />
             Generate AI Quiz
           </Button>
+
+
         </div>
 
 
